@@ -14,7 +14,7 @@ body{
 
 #topo{
     width: 100%;
-    background-color:aliceblue;
+    background-color: #ddd;
     justify-content: center;
     height: auto;
 }
@@ -27,10 +27,10 @@ body{
     width: 40%;
     height: auto;
 }
-
+/*Navegação*/
 nav{
     width: 100%;
-    background-color:crimson;
+    background-color:#dc143c;
     height: auto;
     justify-content: center;
     
@@ -44,18 +44,18 @@ nav{
 
 .menu li{
     position: relative;
-    padding: 10%;
+    padding: 20px 30px;
 }
 
 .menu li a{
-    color:antiquewhite;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .menu li a:hover{
-    color:black;
+    color: #000;
     transition: 0.5s;
 }
 
@@ -63,9 +63,9 @@ nav{
     display: none;
     position: absolute;
     list-style: none;
-    top: 70px;
+    top: 40px;
     left: 0;
-    background-color:crimson;
+    background-color: #dc143c;
 }
 
 .menu li:hover ul{
@@ -76,7 +76,7 @@ nav{
     display: block;
     width: 170px;
 }
-
+/* conteúdo */
 #conteudo{
     min-height: 700px;
     flex-direction: column;
@@ -95,13 +95,44 @@ nav{
 
 
 }
+/* Formulário */
+form{
+    align-self: center;
+    padding: 2%;   
+}
+label, legend{
+    font-size: 0.7em;
+}
+input, select, textarea{
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    
+}
+fieldset{
+    width: 100%;
+    border: none;
+    padding: 40px;
+    margin: auto;
+    
+}
+button{
+    width: 45%;
+    padding: 10px;
+        
+}
+.required::after{
+    content: " *";
+    color: red;
+
+}
 
 #rodape{
     justify-content: center;
     text-align: center;
-    background-color:grey;
+    background-color: #555;
     font-family: Arial, Helvetica, sans-serif;
-    color:aliceblue;
+    color: #fff;
     font-size: 1em;
     align-items: center;
     height: 80px;
