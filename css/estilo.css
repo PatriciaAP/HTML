@@ -111,11 +111,32 @@ label[for="bt_menu"], #bt_menu{
     font-size: 1.5em;
 
 }
-
+.breadcrumb{
+    padding-left: 2%;
+    list-style:none ;
+}
+.breadcrumb li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: #000;
+}
+.breadcrumb li a{
+    color: #555;
+}
+.breadcrumb li a:hover{
+    color: #000;
+}
+.breadcrumb li+li::before{
+    content: "/\00a0";
+    padding: 6px;
+    color: #000;
+}
 h1{
     text-align: center;
      
 }
+
 section{
     padding: 2% 10%; /*acrescentado*/
 }
@@ -258,6 +279,3 @@ video{
         align-self: center;
     }
 }
-
-
-
